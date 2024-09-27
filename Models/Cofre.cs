@@ -22,5 +22,14 @@ namespace estudo.Models
             Console.WriteLine("Quanto deseja depositar?");
             double valor = Convert.ToDouble(Console.ReadLine());
         }
+        public void Sacar()
+        {
+            Console.WriteLine("Em qual moeda deseja sacar?");
+            string tipoMoeda = Console.ReadLine();
+
+            Console.WriteLine("Quanto deseja sacar?");
+            double valor = Convert.ToDouble(Console.ReadLine());
+
+        }
     }
 }

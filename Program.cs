@@ -20,11 +20,13 @@ while(menu)
   switch(opcao)
   {
     case "1":
+    conta.Login();
     break;
     case "2":
     conta.CriarConta();
     break;
     case "3":
+    conta.DeletarConta();
     break;
     case "4":
       menu = false;
