@@ -1,5 +1,7 @@
 ﻿using estudo.Models;
 
+Conta conta = new Conta();
+
 bool menu = true;
 
 string opcao;
@@ -20,6 +22,7 @@ while(menu)
     case "1":
     break;
     case "2":
+    conta.CriarConta();
     break;
     case "3":
     break;
