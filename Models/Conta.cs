@@ -20,9 +20,9 @@ namespace estudo.Models
         }
         public Conta(){}
 
-        protected bool VerificarLogin()
+        protected bool VerificarLogin(string Nome, double Senha)//! erro ao encontrar a desgraca do DB
         {
-            string stringDeConexao = "Data Source=MySQL;Initial Catalog=root;Integrated Security=True";
+            string stringDeConexao = "Data Source=MySQL;Initial Catalog=root;Integrated Security=True";//confere os dados do db
 
             using (SqlConnection connection = new SqlConnection(stringDeConexao))
             {
@@ -49,7 +49,7 @@ namespace estudo.Models
             Console.WriteLine("Digite sua senha: ");
             double Senha = Convert.ToDouble(Console.ReadLine());
 
-            if(VerificarLogin(Nome, Senha)) //! erro no metodo para verificar login
+            if(VerificarLogin(Nome, Senha))
             {
                 Console.WriteLine("Login Bem-sucedido");
             }else{
