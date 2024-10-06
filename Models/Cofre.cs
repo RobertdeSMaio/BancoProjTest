@@ -20,7 +20,9 @@ namespace estudo.Models
             string tipoMoeda = Console.ReadLine();
 
             Console.WriteLine("Quanto deseja depositar?");
-            double valor += Convert.ToDouble(Console.ReadLine());
+            double valor = Convert.ToDouble(Console.ReadLine());
+
+            Conta += valor;
         }
         public void Sacar()
         {
@@ -28,8 +30,9 @@ namespace estudo.Models
             string tipoMoeda = Console.ReadLine();
 
             Console.WriteLine("Quanto deseja sacar?");
-            double valor -= Convert.ToDouble(Console.ReadLine());
+            double valor = Convert.ToDouble(Console.ReadLine());
 
+            Conta -= valor;
         }
     }
 }

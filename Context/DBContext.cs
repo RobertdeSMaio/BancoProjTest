@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCORE;
+using Microsoft.EntityFrameworkCore;
+using estudo.Models;
 
 namespace BancoProjTest.Context
 {
@@ -13,6 +15,6 @@ namespace BancoProjTest.Context
 
         }
 
-        public DbSet<User> Users { get;}
+        public DbSet<Conta> Users { get;}
     }
 }
